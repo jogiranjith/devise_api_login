@@ -5,8 +5,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  devise_for :users, controllers: { registrations: 'registrations',sessions: 'sessions' ,passwords: 'passwords'}
 
+    devise_for :users, controllers: { registrations: 'api/v1/registrations',sessions: 'api/v1/sessions' ,passwords: 'api/v1/passwords'}
+
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
